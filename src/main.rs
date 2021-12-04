@@ -48,6 +48,7 @@ impl State {
         self.player = Player::new(5, 25);
         self.frame_time = 0.0;
         self.mode = GameMode::Playing;
+        self.score = 0;
     }
 
     fn play(&mut self, ctx: &mut BTerm) {
